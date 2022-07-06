@@ -1,5 +1,21 @@
 "use strict";
 
-//let conf = confirm("все ли у тебя в порядке?", "" );
-let prom = resolve("skolko sushek", +"");
-console.log(prom);
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+const a = prompt("Один из последних просмотренных фильмов?", ""),
+      b = prompt("На скольк о оцениваете его?", ""),
+      c = prompt("Один из последних просмотренных фильмов?", ""),
+      d = prompt("На скольк о оцениваете его?", "");
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
