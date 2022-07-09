@@ -1,6 +1,6 @@
 "use strict";
 
-const numberOfFilms = +prompt("сколько фильмов вы посмотрели")
+const numberOfFilms = +prompt("сколько фильмов вы посмотрели");
 const personalMovieDB = {
     count: numberOfFilms,
     movies: {},
