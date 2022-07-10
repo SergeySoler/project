@@ -1,6 +1,6 @@
 "use strict";
 
-//1
+//task 1
 function calculateVolumeAndArea(edge) {
 
     if (typeof edge !== 'number' || edge < 0 || !Number.isInteger(edge)) {
@@ -18,7 +18,7 @@ console.log(calculateVolumeAndArea(15.5));
 console.log(calculateVolumeAndArea('15'));
 console.log(calculateVolumeAndArea(-15));
 
-//2
+//task 2
 
 function getCoupeNumber(num) {
     if (typeof num !== "number" || num < 0 || !Number.isInteger(num)) {
