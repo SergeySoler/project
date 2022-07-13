@@ -46,7 +46,7 @@ function detectPersonalLevel() {
         console.log('Произошла ошибка');
     }
 }
-//detectPersonalLevel();
+detectPersonalLevel();
 
 
 function showMyDB(hidden) {
@@ -55,7 +55,7 @@ function showMyDB(hidden) {
     }
 
 }
-//showMyDB(personalMovieDB.privat);
+showMyDB(personalMovieDB.privat);
 
 function writeYouGenres() {
     for (let i =1; i<=3; i++) {
@@ -63,4 +63,4 @@ function writeYouGenres() {
     }
 }
 
-//writeYouGenres();
+writeYouGenres();
