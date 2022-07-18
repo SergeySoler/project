@@ -41,47 +41,73 @@ document.addEventListener('DOMContentLoaded', () => {
             "Скотт Пилигрим против..."
         ]
     };
-    const advertising = document.querySelectorAll('.promo__adv img'),
+    const adv = document.querySelectorAll('.promo__adv img'),
         poster = document.querySelector('.promo__bg'),
         genre = poster.querySelectorAll('.promo__genre'),
         moviesList = document.querySelector('.promo__interactive-list'),
-        inputFilm = document.querySelector('.promo__interactive .add input[type="text"]'),
-        buttonAddFilms = document.querySelector('.promo__interactive .add button');
+        addForm = document.querySelector('form.add'),
+        addInput = addForm.querySelector('.adding__input'),
+        checkBox = addForm.querySelector('[type="checkbox"]');
+       
+        
+        
+        addForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            let newFilm = addInput.value.trim();
+            const favorite = checkBox.checked;
+            if (favorite) {
+                console.log('Добавляем любимый фильм');
+            } 
+            if (newFilm) {
+                if (newFilm.length > 21) {
+                    newFilm = `${newFilm.substring(0, 22)}...`;
 
-    advertising.forEach((item) => {
-        item.remove();
-    });
-    genre[0].textContent = 'ДРАМА';
-    poster.style.backgroundImage = 'url("img/bg.jpg")';
+                }
+            movieDB.movies.push(newFilm);
+            sortArr(movieDB.movies);
+            createMoviesList(movieDB.movies, moviesList);
+            event.target.reset();
+        }            
+        });
 
-    moviesList.innerHTML = "";
-    movieDB.movies.sort();
+        
 
-    movieDB.movies.forEach((item, i) => {
+    const deleteAdv = (arr) => {
+        arr.forEach((item) => {
+            item.remove();
+        });
+    };
 
-        moviesList.innerHTML += `
+    const makeChanges = () => {
+        genre[0].textContent = 'ДРАМА';
+        poster.style.backgroundImage = 'url("img/bg.jpg")';
+    };
+
+    const sortArr = (arr) => {
+        arr.sort();
+    }
+
+    function createMoviesList(films, parent) {
+        parent.innerHTML = "";
+        sortArr(films);
+        films.forEach((item, i) => {
+            parent.innerHTML += `
         <li class="promo__interactive-item">${i+1} ${item}
             <div class="delete"></div>
         </li>
-        `;
-
-    });
-
-
-    buttonAddFilms.addEventListener('click', (e) => {
-        e.preventDefault();
-        console.log(inputFilm.value);
-        movieDB.movies.push(inputFilm.value);
-
-        movieDB.movies.forEach((item, i) => {
-            if (i + 1 === movieDB.movies.length) {
-                moviesList.innerHTML += `
-    <li class="promo__interactive-item">${i+1} ${item}
-        <div class="delete"></div>
-    </li>
-    `;
-            }
+        `;        
         });
 
-    });
+        document.querySelectorAll('.delete').forEach((btn, i) => {
+            btn.addEventListener('click', () => {
+                btn.parentElement.remove();
+                movieDB.movies.splice(i, 1);                
+                createMoviesList(films, parent);
+            });
+
+        });
+    }
+    makeChanges();
+    deleteAdv(adv);    
+    createMoviesList(movieDB.movies, moviesList);    
 });
