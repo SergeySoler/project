@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const sortArr = (arr) => {
         arr.sort();
-    }
+    };
 
     function createMoviesList(films, parent) {
         parent.innerHTML = "";
