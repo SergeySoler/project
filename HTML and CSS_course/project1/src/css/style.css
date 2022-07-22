@@ -1,0 +1,23 @@
+/* селектор {
+    свойство: значение;
+    свойство: значение;
+    свойство: значение;
+} */
+h2 {
+    color: blue;
+    text-align: center;    
+}
+.chapter {
+    color: red;
+}
+#start {
+color: green;
+font-weight: 600;
+text-shadow: inherit;
+text-decoration: line-through;
+font-size: 30px;
+}
+.text {
+font-style: italic;
+text-transform: lowercase;
+}
