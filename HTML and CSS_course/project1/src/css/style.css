@@ -3,7 +3,21 @@
     свойство: значение;
     свойство: значение;
 } */
-h2 {
+body {
+    background-color: rgb(255, 255, 224);
+}
+h1,h2 {
+text-align: center;
+color: brown;
+}
+h3 {
+    text-transform: uppercase;
+}
+span {
+    font-style: italic;
+}
+
+/* h2 {
     color: blue;
     text-align: center;    
 }
@@ -20,4 +34,4 @@ font-size: 30px;
 .text {
 font-style: italic;
 text-transform: lowercase;
-}
+} */

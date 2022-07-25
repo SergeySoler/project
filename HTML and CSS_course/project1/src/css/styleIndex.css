@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+.newContent {
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    padding: 20px;
+    border: 3px solid black;
+    margin: 20px;
+}
+h1 {
+    color:black;
+}
+.aqua {
+    color: rgb(50, 132, 49);
+}
+.pink {
+    color:rgb(80, 77, 164)
+}
