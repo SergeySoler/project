@@ -132,13 +132,13 @@ h2.title {
     text-align: center;
     color: #4A4A4A;
 }
-.waiting .waiting_wrapper {
-    margin-top: 45.5px;    
+.waiting .waiting_wrapper {    
+    margin-top: 45.5px;
+    padding: 0 9px;
+    display: flex;
+    justify-content: space-between;    
 }
-.waiting .waiting_wrapper .waiting_item {
-    display: inline-block;
-    margin: 0 15px;
-    vertical-align: top;
+.waiting .waiting_wrapper .waiting_item {    
     width: 342px;
     text-align: center;
 }

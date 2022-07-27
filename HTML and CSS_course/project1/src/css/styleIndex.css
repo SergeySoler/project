@@ -16,5 +16,32 @@ h1 {
     color: rgb(50, 132, 49);
 }
 .pink {
-    color:rgb(80, 77, 164)
+    color:rgb(80, 77, 164)    
+}
+.wrapper_flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    margin: 0 auto;    
+    height: 600px;
+    background-color: blanchedalmond;
+    border: 3px solid black;
+}
+.flex_container {
+    margin: 20px;
+    border: 1px solid rgb(117, 31, 31);
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+
+}
+.second_container {
+    display: block;
+    
+    height: 1000px;
+    background-color:rgb(50, 132, 49);
 }
