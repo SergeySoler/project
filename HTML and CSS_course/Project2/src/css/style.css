@@ -5,6 +5,7 @@
 }
 
 .container {
+    position: relative;
     width: 1140px;
     margin: 0 auto;
 }
@@ -105,11 +106,11 @@ h2.title {
     margin-top: 13px;
 }
 .waiting {        
-    height: 604px;
+    min-height: 604px;
     padding: 86px 0 74px 0;
     background: #EFEFEF;
 }
-.waiting .waiting_header {
+.waiting .waiting_header, .finish .finish_header {
     font-family: 'Roboto';    
     font-weight: 400;
     font-size: 30px;        
@@ -117,7 +118,10 @@ h2.title {
     text-transform: uppercase;
     color: #252525;
 }
-.waiting .waiting_divider {
+.finish .finish_header {
+    color: #EFEFEF;
+}
+.waiting .waiting_divider, .finish .finish_divider {
     margin: 0 auto;
     margin-top: 18px;    
     width: 220px;
@@ -148,3 +152,69 @@ h2.title {
 .waiting .waiting_wrapper .waiting_item .waiting_descr {
     margin-top: 26px;
 } 
+.optimization {
+    min-height: 547px;
+    padding: 108px 0 74px 0;
+}
+.optimization .optimization_header {
+    margin-left: 391px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 30px;
+    color: #299CBD;
+}
+.optimization .optimization_text {
+    margin-top: 25px;
+    margin-left: 391px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 27px;
+    color: #4A4A4A;
+}
+.optimization .optimization_text span {    
+    font-weight: 700;    
+    color: #4A4A4A;
+}
+.optimization .optimization_img {
+    position: absolute;
+    top: -61px;
+    left: -240px;
+    z-index: -1;
+}
+.finish {    
+    min-height: 450px;
+    padding: 86px 0 68.5px 0;
+    background: url('../img/bg/second_bg.jpg') center center/cover no-repeat;    
+}
+.finish .finish_wrapper {
+    margin-top: 68px;
+    display: flex;
+    justify-content: space-between;
+}
+.finish .finish_wrapper .finish_item {     
+    width: 234px;            
+}
+.finish .finish_wrapper .finish_item .finish_round {    
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 118px;
+    height: 118px;   
+    background: #B4E2FF;
+    border-radius: 100%;    
+}
+.finish .finish_wrapper .finish_item .finish_desc {   
+    margin-top: 24.5px; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    color: #EFEFEF;
+    text-align: center;
+}
