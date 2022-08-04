@@ -3,24 +3,20 @@
     padding: 0;
     margin: 0;
 }
-
 .container {
     position: relative;
     width: 1140px;
     margin: 0 auto;
 }
-
 .promo {
     height: 800px;
     background: url('../img/bg/main_bg.jpg') center center/cover no-repeat;
     padding: 38px 0 61.02px 0;
 }
-
 .logo .logo_img {
     display: block;
     margin: 0 auto;
 }
-
 .logo .logo_text {
     color: #FFFFFF;
     font-family: 'Roboto';
@@ -31,7 +27,6 @@
     text-align: center;
     margin-top: 9.5px;
 }
-
 .title {
     font-family: 'Roboto';
     font-weight: 900;
@@ -114,7 +109,7 @@ margin-top: 51px;
     padding: 86px 0 74px 0;
     background: #EFEFEF;
 }
-.waiting .waiting_header, .finish .finish_header {
+.waiting .waiting_header, .finish .finish_header, .webinar .webinar_header {
     font-family: 'Roboto';    
     font-weight: 400;
     font-size: 30px;        
@@ -160,7 +155,7 @@ margin-top: 51px;
     min-height: 547px;
     padding: 108px 0 74px 0;
 }
-.optimization .optimization_header {
+.optimization .optimization_header, .webinar .webinar_time  {
     margin-left: 391px;
     font-family: 'Roboto';
     font-style: normal;
@@ -168,6 +163,10 @@ margin-top: 51px;
     font-size: 30px;
     line-height: 30px;
     color: #299CBD;
+}
+.webinar .webinar_time {
+    margin-left: 0;
+    margin-top: 30px;
 }
 .optimization .optimization_text {
     margin-top: 25px;
@@ -241,4 +240,50 @@ margin-top: 51px;
     line-height: 43px;
     text-align: center;
     color: #252525;
+}
+.webinar {
+    display: flex;
+    justify-content: center;    
+    width: 577px;
+    height: 433px;    
+    margin: 0 auto;
+    margin-top: 81px;
+}
+.webinar .webinar_wrapper { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.webinar .webinar_wrapper .webinar_img {
+    margin: 0 auto;
+}
+.webinar .webinar_wrapper .webinar_header {
+    margin-top: 36px;
+}
+.webinar .webinar_wrapper .webinar_text {
+    margin-top: 24.5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 20px;
+    color: #4A4A4A;
+}
+.footer {
+    min-height: 169px;
+    background: #1A1A1A;
+}
+.footer .footer_text {
+    display: block;
+    width: 407px;
+    margin: 0 auto;
+    padding-top: 57px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #888888;
 }
