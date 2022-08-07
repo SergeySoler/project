@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+html {
+    font-family: 'Roboto' sans-serif;
+}
 .container {
     position: relative;
     width: 1140px;
@@ -74,7 +77,7 @@ h2.title {
     height: 72px;    
     background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);    
-    font-family: 'RobotoCondensed';
+    font-family: 'Roboto';
     font-size: 21px;
     line-height: 24px;   
     text-align: center;
@@ -150,7 +153,12 @@ margin-top: 51px;
 }  
 .waiting .waiting_wrapper .waiting_item .waiting_descr {
     margin-top: 26px;
-} 
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    color: #4A4A4A;
+    } 
 .optimization {
     min-height: 547px;
     padding: 108px 0 74px 0;
