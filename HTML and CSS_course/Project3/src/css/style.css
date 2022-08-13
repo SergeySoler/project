@@ -134,60 +134,60 @@ color: #1EACC7;
     margin: 116px auto 0 auto;     
 }
 .advantage {
-    min-height: 850px;
+    padding: 18px 0 64px 0;
 }
-.advantage .advantage_btm {
+.advantage .label {
     display: block;
-    margin: 20px auto 0 auto;
+    margin: 0 auto;
     width: 115px;
-    height: 27px;
-    background: #000000;
+    height: 27px;    
+    background: #000000;    
     font-weight: 400;
-    font-size: 11px;
+    font-size: 11px;   
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
     mix-blend-mode: normal;
-    border: none;
+    padding: 5px 0;
 }
 .advantage .advantage_header {    
+    margin-top: 38px;
+    margin-bottom: 0;
     font-weight: 700;
-    font-size: 38px;   
+    font-size: 38px;    
     text-align: center;
     text-transform: uppercase;
     color: #222222;
-    margin-top: 40px;
+}
+.advantage .advantage_item .advantage_round {
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 113px;
+    height: 113px;
+    background: #1EACC7;
+    border-radius: 100%;
 }
 .advantage .advantage_item {
+    margin-top: 25px;
     display: flex;
     justify-content: center;
-    align-items:center;
-    margin-top: 28px;
-   
-}
-
-.advantage .advantage_round {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    width: 116px;
-    height: 116px;
-    background: #1EACC7;
-    border-radius: 100%;   
-    margin: 0 auto;
+    align-items: center;
 }
 .advantage .advantage_descr {
+    width: 343px;
+}
+.advantage .advantage_descr .advantage_subtitle {    
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;    
+    color: #1EACC7;    
+}
+.advantage .advantage_descr .advantage_text {   
     font-weight: 300;
     font-size: 15px;
     line-height: 21px;
-    align-items: center;
     color: #202020;
-    width: 360px;
-    min-height: 150px;
 }
-.advantage .advantage_wrapper {
-    position: relative;
-}
-.advantage .advantage_wrapper .colum_two {
-    position: absolute;
-}
+
